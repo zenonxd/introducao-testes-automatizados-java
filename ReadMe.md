@@ -35,7 +35,7 @@ public class CalculatorTest {
 O problema desse método é que só estamos imprimindo o resultado. Pro teste ser automatizado (aferido), usaremos
 a bilioteca AsserJ.
 
-## AsserJ
+## AssertJ
 
 Ela nos permite escrever os Assert de forma mais fluída, com fácil leitura. Para usarmos o AsserJ, usaremos a classe
 **Assertions**, veja:
