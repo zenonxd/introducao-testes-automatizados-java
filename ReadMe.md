@@ -1,9 +1,63 @@
-# Introdução
+<h1 align="center">
+  StarWars Planet API (sw-planet-api)
+</h1>
 
-> lembrar de configurar o mysql no mysqlcommandline
+<p align="center">
+  <a href="#-technologies">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-introdução">Introdução</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=Curso na Udemy&message=Testes automatizados na prática com Spring Boot&color=8257E5&labelColor=000000" alt="Testes automatizados na prática com Spring Boot" />
+</p>
+
+## ✨ Technologies
+
+- [Mysql](https://dev.mysql.com/downloads/mysql/)
+- [Java](https://www.oracle.com/java/technologies/downloads/)
+- [Maven](https://maven.apache.org/download.cgi)
+- [Spring Boot](https://spring.io/projects/spring-boot)
+- [Spring Testing](https://docs.spring.io/spring-framework/docs/current/reference/html/testing.html#testing-introduction)
+- [JUnit 5](https://junit.org/junit5/docs/current/user-guide/)
+- [Mockito](https://site.mockito.org)
+- [AssertJ](https://github.com/assertj/assertj)
+- [Hamcrest](http://hamcrest.org/JavaHamcrest/)
+- [Jacoco](https://github.com/jacoco/jacoco)
+- [Pitest](https://pitest.org)
+
+# 📌 Tópicos
+
+* [✨ Technologies](#-technologies)
+* [💻 Introdução - Projeto](#-introdução---projeto)
+<hr>
+
+* [Escrevendo o Primeiro Teste Automatizado 🛠️](#-escrevendo-o-primeiro-teste-automatizado)
+* [JUnit](#junit)
+* [AssertJ](#assertj)
+<hr>
+
+* [🧪 Tipos de Teste](#-tipos-de-teste)
+  * [Teste de Unidade](#teste-de-unidade)
+  * [Teste de Integração](#teste-de-integração)
+  * [Teste de Componente ou Subcutâneo](#teste-de-componente-ou-subcutâneo)
+  * [Teste de e2e](#teste-de-e2e)
+<hr>
+
+* [Estudo Final do Projeto](#estudo-final-do-projeto)
 
 
-## Escrevendo o Primeiro Teste Automatizado
+# 💻 Introdução - Projeto
+
+sw-planet-api é um serviço web que provê dados sobre a franquia de Star Wars, mais especificamente sobre os planetas 
+que aparecem nos filmes.
+
+Esse projeto foi elaborado durante o curso [Testes automatizados na prática com Spring Boot](https://www.udemy.com/course/testes-automatizados-na-pratica-com-spring-boot/?referralCode=7F6C5AA14AE558497FE0), em que o foco foi a criação de testes automatizados.
+
+
+>❗ lembrar de configurar o mysql no mysqlcommandline
+
+
+## 🛠️ Escrevendo o Primeiro Teste Automatizado
 
 Normalmente usamos SOUT para testar alguma coisa.
 
@@ -55,9 +109,9 @@ public class CalculatorTest {
 
 **Resumo: JUnit para executar os testes e AssertJ para aferir os resultados.**
 
-## Tipos de Teste
+## 🧪 Tipos de Teste
 
-### [Teste de Unidade]()
+### [Teste de Unidade](https://github.com/zenonxd/estudo-testes-unidade)
 Pequena parte do codigo/sistema. Unidade seria métodos ou classes.
 
 ![img.png](img.png)
@@ -70,7 +124,7 @@ De nenhum banco de dado ou método externo.
 Sociável - Quando uma unidade conversa com outro método de código. Quando há alguma dependência no teste.
 <hr>
 
-### [Teste de Integração]()
+### [Teste de Integração](https://github.com/zenonxd/estudo-testes-integracao)
 Testar bordas da aplicação, quando excedemos a sua fronteira. Isso vai ocorrer quando há alguma integração com banco
 de dado, camada web...
 
@@ -89,13 +143,13 @@ caro.
 A ideia então, é criar um duble de teste! Duplar esse banco, um quebra galho. **Tipo um banco H2**.
 <hr>
 
-### [Teste de Componente]()
+### [Teste de Componente ou Subcutâneo](https://github.com/zenonxd/estudo-testes-subcutaneos)
 Seria um teste subcutâneo. Ele cruza várias camadas e componentes do sistema. 
 
 ![img_2.png](img_2.png)
 <hr>
 
-### [Teste de e2e]()
+### [Teste de e2e](https://github.com/zenonxd/estudo-testes-subcutaneos)
 Aqui a ideia é subir o sistema por completo mesmo, com servidor de aplicação, banco de dados, webservice...
 
 ![img_3.png](img_3.png)
@@ -122,3 +176,5 @@ Já os de cima (topo) e mais manual, ele é mais lento e caro de ser feito. Ent�
 desse tipo.
 
 Então não descartamos NADA, somente otimizamos o que deve ser feito.
+
+## [Estudo Final do Projeto](https://github.com/zenonxd/estudo-final-testes)
